@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="left">
+            <p class="typewriter" style="font-weight: bolder;">Short URL Maker</p>
+        </div>
+        <div class="right">
+            <a href="#">Signup</a>
+            <a href="#">Signin</a>
+        </div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="maincontainer">
+        <h1>URL Shortener</h1>
+
+        <form action="/url" method="POST">
+            <label for="long-url">Enter or Paste Your long URL:</label>
+            <input type="text" id="long-url" name="url" placeholder="https://example.com">
+            <button type="submit" id="shorten-btn">Shorten</button>
+        </form>
+        <div id="short-url-container" style="display:none">
+            <p>Here's your shortened URL:</p>
+            <div id="short-url">
+                <a href="" target="_blank"></a>
+                <button type="button" id="copy-btn">Copy</button>
+            </div>
+        </div>
+        <!-- <div class="credit">Made<span style="color:tomato;font-size:20px;">❤ </span>by<a href=""> Akash Chandra Sahu</a></div> -->
+    </div>
+    <footer>
+        <div class="footer-links">
+            <p> Minimize your long and complex URLs into feature-rich, simple, and trackable short links.</p>
+            <p>Developed By @ <a href="">Akash Chandra Sahu</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- Minimize your long and complex URLs into feature-rich, simple, and trackable short links." -->
